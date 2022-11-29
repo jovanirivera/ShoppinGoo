@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.QrFragment">
+
+
+    <Button
+        android:id="@+id/botontex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generar QR"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorApp"
+        android:layout_gravity="bottom"
+        android:textColor="@color/colorWhite"
+        android:layout_margin="20dp"
+        tools:text="Generar" />
+
+    <EditText
+        android:id="@+id/txtDatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/codeqr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnscan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/colorApp"
+        android:text="Scannear QR"
+        android:textColor="@color/colorWhite" />
+
+    <TextView
+        android:id="@+id/TextQr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minHeight="48dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+</LinearLayout>
